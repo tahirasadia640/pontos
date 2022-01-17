@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- flickity-slider Link -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
+    <!-- Play Fair Font Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Merriweather Font Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Open Sans Font Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Data Aos Css Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <a id="close_mobile_menu" href="javascript:;"></a>
+    <div class="mobile_menu_wrapper">
+        <div class="mobile_menu_content">
+            <div class="menu-main-menu-container">
+                <ul id="mobile_main_menu" class="mobile_main_nav">
+                    <li><a href="#">Startseite</a></li>
+                    <li class="has-submenu"><a href="#">Zimmer &  Suiten</a></li>
+                    <li class="has-submenu"><a href="#">Angebote & Arrangements</a></li>
+                    <li class="has-submenu"><a href="#">Restaurant</a></li>
+                    <li><a href="#">Spa</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="wrapper">
+        <div class="wrapper-inner">
+                <!-- Header -->
+                <header class="main-header">
+                    <div class="header-container">
+                        <nav class="navbar navbar-expand-lg p-0">
+                            <div class="menu-icon">
+                                <a href="#"><i class="fa fa-bars toggle-icon"></i></a>
+                            </div>
+                                <ul>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li class="dropdown-item"><a href="#">Startseite</a></li>
+                                        <li class="dropdown-item"><a href="#">Zimmer & Suiten</a></li>
+                                        <li class="dropdown-item"><a href="#">Angebote & Arrangements</a></li>
+                                        <li class="dropdown-item"><a href="#">Restaurant</a></li>
+                                        <li class="dropdown-item"><a href="#">Spa</a></li>
+                                        <li class="dropdown-item"><a href="#">Galerie</a></li>
+                                        <li class="dropdown-item"><a href="#">News</a></li>
+                                        <li class="dropdown-item"><a href="#">Kontakt</a></li>
+                                    </ul>
+                                </li>
+                                </ul>
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/images/logo-white.png" class="white" alt="Brand Logo">
+                            </a>
+                            <div class="contact-number">
+                                <p>+49 (0) 30 202 36 55 70</p>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+                <!-- Gallery Hero Section -->
+                <section class="gallry-hero">
+                    <div class="galerie-background">
+                        <div class="overly gallery-overly"></div>
+                        <div class="gallery-content">
+                            <div class="gallery-content-inner">
+                                <h1>Galerie</h1>
+                                <h5>NACH IHREN WÜNSCHEN GESTALTET</h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Gallery Photo Grid -->
+                <section class="gallery-grids-main">
+                    <div class="gallery-grid-inner">
+                        <div class="gallery-top-text">
+                            <h2>Galerie Grid</h2>
+                            <p>Diese Galerie gibt es mit 2-5 Spalten</p>
+                        </div>
+                         <div class="container-custom">
+                            <div class="first-gallery">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                      <div class="gird-box js-tilt">
+                                          <a href="#"><img src="assets/images/gallery-photo.jpg" alt="Gallery Image 1"></a>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="gird-box js-tilt">
+                                            <a href="#"><img src="assets/images/gallery-photo-2.jpg" alt="Gallery Image 2"></a>
+                                        </div>
+                                      </div>
+                                    <div class="col-lg-4">
+                                        <div class="gird-box js-tilt">
+                                            <a href="#"><img src="assets/images/gallery-photo-3.jpg" alt="Gallery Image 3"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="gird-box js-tilt">
+                                            <a href="#"><img src="assets/images/gallery-photo-4.jpg" alt="Gallery Image 4"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="gird-box js-tilt">
+                                            <a href="#"><img src="assets/images/gallery-photo-5.jpg" alt="Gallery Image 5"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="gird-box js-tilt">
+                                            <a href="#"><img src="assets/images/gallery-photo-6.jpg" alt="Gallery Image 6"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="gird-box js-tilt">
+                                            <a href="#"><img src="assets/images/gallery-photo-7.jpg" alt="Gallery Image 7"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="gird-box js-tilt">
+                                            <a href="#"><img src="assets/images/gallery-photo-8.jpg" alt="Gallery Image 8"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="gird-box js-tilt">
+                                            <a href="#"><img src="assets/images/gallery-photo-9.jpg" alt="Gallery Image 9"></a>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>                         
+                         </div>
+                    </div>
+                </section>
+                <!-- Ziegelstein Gallery -->
+                <section class="ziegelstein">
+                    <div class="ziegelstein-inner">
+                        <div class="container-custom">
+                            <div class="ziegelstein-top-text">
+                                <h2>Ziegelstein-Galerie</h2>
+                                <p>Diese Galerie gibt es mit 2-5 Spalten</p>
+                            </div>   
+                            <div class="ziegelstein-grid">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="ziegelstein-column-1">
+                                            <div class="ziegelstein-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery2-photo-1.jpg" alt="ziegelstein column 1 Image 1"></a>
+                                            </div>
+                                            <div class="ziegelstein-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery2-photo-4.jpg" alt="ziegelstein column 1 Image 2"></a>
+                                            </div>
+                                            <div class="ziegelstein-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery2.jpg" alt="ziegelstein column 1 Image 3"></a>
+                                            </div>
+                                            <div class="ziegelstein-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery2-photo-12.jpg" alt="ziegelstein column 1 Image 4"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="ziegelstein-column-2">
+                                            <div class="ziegelstein-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery2-photo-2.jpg" alt="ziegelstein column 2 Image 1"></a>
+                                            </div>
+                                            <div class="ziegelstein-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery2-photo-5.jpg" alt="ziegelstein column 2 Image 2"></a>
+                                            </div>
+                                            <div class="ziegelstein-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery2-photo-6.jpg" alt="ziegelstein column 2 Image 3"></a>
+                                            </div>
+                                            <div class="ziegelstein-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery2-photo-9.jpg" alt="ziegelstein column 2 Image 4"></a>
+                                            </div>
+                                            <div class="ziegelstein-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery2-photo-11.jpg" alt="ziegelstein column 2 Image 5"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="ziegelstein-column-3">
+                                            <div class="ziegelstein-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery2-photo-3.jpg" alt="ziegelstein column 3 Image 1"></a>
+                                            </div>
+                                            <div class="ziegelstein-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery2-photo-7.jpg" alt="ziegelstein column 3 Image 2"></a>
+                                            </div>
+                                            <div class="ziegelstein-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery2-photo-10.jpg" alt="ziegelstein column 3 Image 3"></a>
+                                            </div>
+                                            <div class="ziegelstein-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery2-photo-13.jpg" alt="ziegelstein column 3 Image 4"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Angepasste Gallerry -->
+                <section class="angepasste">
+                    <div class="angepasste-inner">
+                        <div class="container-custom">
+                            <div class="angepasste-top-text">
+                                <h2>angepasste Galerie</h2>
+                                <p>Diese Galerie gibt es mit 2-5 Spalten</p>
+                            </div>
+                            <div class="angepasste-grid">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="angepasste-row-1">
+                                            <div class="angepasste-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery3-photo-1.jpg" alt="angepasste row 1 Image 1"></a>
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery3-photo-2.jpg" alt="angepasste row 1 Image 2"></a>
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery3-photo-3.jpg" alt="angepasste row 1 Image 3"></a>
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery3-photo-4.jpg" alt="angepasste row 1 Image 4"></a>
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery3-photo-5.jpg" alt="angepasste row 1 Image 5"></a>
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <a href="#"><img src="assets/images/gallery3-photo-6.jpg" alt="angepasste row 1 Image 6"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="angepasste-row-2">
+                                            <div class="angepasste-box js-tilt">
+                                                <img src="assets/images/gallery3-photo-7.jpg" alt="angepasste row 2 Image 1">
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <img src="assets/images/gallery3-photo-8.jpg" alt="angepasste row 2 Image 2">
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <img src="assets/images/gallery3-photo-9.jpg" alt="angepasste row 2 Image 3">
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <img src="assets/images/gallery3-photo-10.jpg" alt="angepasste row 2 Image 4">
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <img src="assets/images/gallery3-photo-11.jpg" alt="angepasste row 2 Image 5">
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <img src="assets/images/gallery3-photo-12.jpg" alt="angepasste row 2 Image 6">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="angepasste-row-3">
+                                            <div class="angepasste-box js-tilt">
+                                                <img src="assets/images/gallery3-photo-13.jpg" alt="angepasste row 3 Image 1">
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <img src="assets/images/gallery3-photo-14.jpg" alt="angepasste row 3 Image 2">
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <img src="assets/images/gallery3-photo-15.jpg" alt="angepasste row 3 Image 3">
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <img src="assets/images/gallery3-photo-16.jpg" alt="angepasste row 3 Image 4">
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <img src="assets/images/gallery3-photo-17.jpg" alt="angepasste row 3 Image 5">
+                                            </div>
+                                            <div class="angepasste-box js-tilt">
+                                                <img src="assets/images/gallery3-photo-18.jpg" alt="angepasste row 3 Image 6">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="angepasste-row-4">
+                                            <div class="angepasste-laste-box js-tilt">
+                                                <img src="assets/images/gallery3-photo-19.jpg" alt="angepasste row 4 Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Rotierende Galerie -->
+                <section class="rotierende">
+                    <div class="rotierende-inner">
+                        <div class="container-custom">
+                            <div class="rotierende-top-text">
+                                <h2>rotierende Galerie</h2>
+                                <p>Bestimmern Sie Spaltenhöhe, Abstände & Geschwindigkeit</p>
+                            </div>
+                        <!-- Flickity Slider -->
+                        <section class="flickity-slider gallery-flickity">
+                            <div class="carousel" data-flickity='{ "fullscreen": true, "loop": true, "contain": true, "groupCells": 1, "lazyLoad": true  }' data-autoplay="0" data-loop="0" data-navigation="1" data-pagination="0" data-parallax="0" data-fullscreen="0" tabindex="0">
+                                <div class="carousel-cell gallery-carousel-cell">
+                                    <img src="assets/images/gallery4-slide2.jpg" alt="">
+                                </div>
+                                <div class="carousel-cell gallery-carousel-cell">
+                                    <img src="assets/images/gallery4-slide1.jpg" alt="">
+                                </div>
+                                <div class="carousel-cell gallery-carousel-cell">
+                                    <img src="assets/images/gallery4-slide3.jpg" alt="">
+                                </div>
+                                <div class="carousel-cell gallery-carousel-cell">
+                                    <img src="assets/images/gallery4-slide4.jpg" alt="">
+                                </div>
+                                <div class="carousel-cell gallery-carousel-cell">
+                                    <img src="assets/images/gallery4-slide5.jpg" alt="">
+                                </div>
+                                <div class="carousel-cell gallery-carousel-cell">
+                                    <img src="assets/images/gallery4-slide6.jpg" alt="">
+                                </div>
+                                <div class="carousel-cell gallery-carousel-cell">
+                                    <img src="assets/images/gallery4-slide7.jpg" alt="">
+                                </div>
+                            </div>
+                        </section>
+                        </div>
+                    </div>
+                </section>
+                <!-- Album Section -->
+                <section class="album">
+                    <div class="album-inner">
+                        <div class="container-custom">
+                            <div class="album-top-text">
+                                <h2>Album Grid</h2>
+                                <p>Diese Galerie gibt es mit 2-5 Kacheln</p>
+                            </div>
+                            <div class="tilter-main">
+                            <a href="#" class="tilter tilter--1">
+                                <figure class="tilter__figure">
+                                  <img class="tilter__image" src="assets/images/album-1.jpg" alt="test-img">
+                                  <div class="tilter__deco tilter__deco--shine">
+                                      <div style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);"></div>
+                                  </div>
+                                  <div class="tilter__deco tilter__deco--overlay"></div>
+                                  <figcaption class="tilter__caption">
+                                        <h3 class="tilter__title">Album 1</h3>
+                                          <p class="tilter__description">Sub title 1</p>
+                                      </figcaption>
+                                      <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                          <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                      </svg>
+                                  </figure>
+                            </a>
+                            <a href="#" class="tilter tilter--1">
+                                <figure class="tilter__figure">
+                                  <img class="tilter__image" src="assets/images/album-2.jpg" alt="test-img">
+                                  <div class="tilter__deco tilter__deco--shine">
+                                      <div style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);"></div>
+                                   </div>
+                                  <div class="tilter__deco tilter__deco--overlay"></div>
+                                  <figcaption class="tilter__caption">
+                                        <h3 class="tilter__title">Album 2</h3>
+                                          <p class="tilter__description">Sub title 2</p>
+                                      </figcaption>
+                                      <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                          <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                      </svg>
+                                  </figure>
+                            </a>
+                            <a href="#" class="tilter tilter--1">
+                                <figure class="tilter__figure">
+                                  <img class="tilter__image" src="assets/images/album-3.jpg" alt="test-img">
+                                  <div class="tilter__deco tilter__deco--shine">
+                                      <div style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);"></div>
+                                  </div>
+                                  <div class="tilter__deco tilter__deco--overlay"></div>
+                                  <figcaption class="tilter__caption">
+                                        <h3 class="tilter__title">Album 3</h3>
+                                          <p class="tilter__description">Sub title 3</p>
+                                      </figcaption>
+                                      <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                          <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                      </svg>
+                                </figure>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Footer -->
+                <footer>
+                    <div class="footer-inner">
+                        <div class="footer-brand">
+                            <img src="assets/images/logo-black.png" alt="">
+                        </div>
+                        <div class="footer-container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="hotel-text">
+                                        <h5>B2K Hotel</h5>
+                                        <p>Kronberger Str. 12,</br> 14193 Berlin</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="footer-contact">
+                                        <p>
+                                            Tel.: +49 (0) 30 202 36 55 70 </br>
+                                            Fax: +49 (0) 30 202 36 55 70 </br>
+                                            info@b2k-media.de
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-copy-main">
+                            <div class="footer-copy">
+                                <p>© Copyright B2K Media</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </div>
+    <div class="est-frontend-display-wrap">	
+        <div class="est-external est-tab-type">
+            <a href="#" target="_blank" class="est-external-link est-tab-link">
+                Jetzt ab 49€ buchen			</a>
+        </div>			
+    </div>  
+
+
+<!-- Bootstrap Script -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!-- flickity-slider -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+<!-- Tilter Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+<!-- Tilt Scripts -->
+<script src="https://unpkg.com/tilt.js@1.1.19/dest/tilt.jquery.js"></script>
+<!-- Data Aos Script -->
+<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+<!-- Js Script -->
+<script src="assets/js/main.js"></script>  
+</body>
+</html>

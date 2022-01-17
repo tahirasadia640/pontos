@@ -1,0 +1,3104 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+  width: 100%;
+  transition: all ease-in-out 0.3s;
+  color: #222222;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 14px;
+    line-height: 1.9;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+a:hover {
+    text-decoration: none;
+}
+/* ================= Navbar Css ======================== */
+
+.main {
+    width: 100%;
+}
+body.js_nav #wrapper {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+}
+body #wrapper .wrapper-inner {
+    transition: all 0.3s ease;
+}
+body.js_nav #wrapper .wrapper-inner {
+    transform: translateX(10%) rotateY(-44deg);
+}
+.menu-icon a {
+    color: #fff;
+}
+.inverted {
+    display: none;
+}
+/* Mobile Menu */
+#close_mobile_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#close_mobile_menu.open {
+    z-index: 99;
+    display: block;
+}
+.mobile_menu_wrapper {
+    background: #ffffff !important;
+    width: 400px;
+    padding: 130px 0 90px 90px;
+    padding-right: 0;
+    box-sizing: border-box;
+    background: #111111;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    z-index: 999;
+    color: #999;
+    -webkit-font-smoothing: subpixel-antialiased;
+    transition: transform 400ms ease;
+    transform: translate(-100%, 0px);
+}
+body.js_nav .mobile_menu_wrapper {
+    transform: translate(0px, 0px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    z-index: 99;
+    box-shadow: -22px 0 40px rgba(0, 0, 0, 0.1);
+}
+.mobile_menu_content {
+    display: flex;
+    width: 100%;
+}
+.mobile_menu_wrapper .mobile_menu_content > div {
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    /* overflow-x: hidden; */
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.mobile_main_nav,
+#submenu_container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 0;
+}
+.mobile_main_nav.mainnav_in {
+    animation: mainNavIn 0.5s;
+}
+.mobile_main_nav.mainnav_out {
+    animation: mainNavOut 0.5s;
+}
+
+.mobile_main_nav li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    color: #222222;
+    line-height: 2em;
+}
+.mobile_main_nav li ul.sub-menu {
+    display: none;
+}
+
+a.close-sidebar-submenu {
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+a.close-sidebar-submenu i {
+    margin-right: 4px;
+}
+
+/* ============= Hero Section Css ================= */
+.hero-vedio {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+.nature-vedio {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   right: 0;
+   
+}
+.hero-custom-content {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+.container-custom.hero-text-main {
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hero-content {
+    width: 500px;
+}
+.hero-content strong {
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-family: Merriweather, Georgia, serif;
+}
+.hero-content h2 {   
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 36px;
+    line-height: 1.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+
+/* =============== Header Styles ================ */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+}
+
+/* =============== Navbar Section ================ */
+.header-container {
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0 90px;
+}
+
+.main-header.inverted .navbar-nav > li.active > a::before,
+.main-header.inverted .navbar-nav > li > a::before {
+    background: #222;
+}
+.navbar-brand {
+    margin: auto;
+}
+.navbar-brand img {
+    width: 117px;
+    height: 84px;
+    position: relative;
+    top: 24px;
+}
+/* DropDown */
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.navbar ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+.navbar ul li {
+    list-style: none;
+    padding-top: 13px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    width: 50%;
+}
+.navbar ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    
+}
+.dropdown-item {
+    padding: 5px 20px 10px 20px;
+}
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #fff;
+}
+.dropdown-item a:hover {
+    border-bottom: 1px solid #fff;
+}
+.dropdown-menu {
+    margin-top: 0;
+    border-radius: 0;
+    background-color: #222222;
+}
+.contact-number p {
+    color: #fff;
+}
+.contact-number p::before {
+    content: '\f3cf';
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 18px;
+    margin: 0 6px 0 0;
+    font-weight: 600;
+    color: #fff;
+}
+/* ================= Home Page Css ===================== */
+.container-custom {
+    width: 77%;
+    margin: auto;
+}
+/* ================ Content 1 Section Css ================= */
+.content-1-inner {
+    text-align: center;
+    padding: 70px;
+    width: 80%;
+    margin: auto;
+}
+.content-1-topimage img {
+    width: 90px;
+}
+.content-1-toptext h2 {
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 32px;
+    line-height: 1em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-weight: 400;
+    color: #222222;
+}
+.content-1-toptext h2 span {
+    color: #008000;
+}
+.content-1-signatureimage img {
+    width: 203px;
+}
+.content-1-bottomtext {
+    margin: 20px 0px 10px 0px;
+}
+.content-1-bottomtext h4 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-style: italic;
+    color: #424242;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.content-1-bottomtext p {
+    color: #424242;
+    text-transform: uppercase;
+    line-height: 1em;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+/* ==================== Schlafen Section ====================== */
+.schlafen-background {
+    position: relative;
+    width: 100%;
+    background-image: url('../images/slider-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 19.5% 0 14% 0;
+}
+.overly {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    opacity: 0.4;
+}
+.schlafen-content {
+    position: relative;
+    width: 60%;
+}
+.schlafen-content h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    color: #ffffff;
+    font-size: 36px;
+    font-style: italic;
+}
+.schlafen-content p {
+    color: #ffffff;
+}
+.hero-button {
+    font-family: "Open Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background-color: transparent;
+    border-style: solid;
+    border: 1px solid #fff;
+    border-color: #ffffff;
+    border-radius: 0px;
+    padding: 12px 24px;
+    display: inline-block;
+    transition: all ease-in-out 0.2s;
+}
+.hero-button:hover {
+    color: #222222;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    transform: scale(0.8) !important;
+}
+/* ========================== Schmecken ======================= */
+.schmecken-background {
+    position: relative;
+    width: 100%;
+    background-image: url('../images/food2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 16% 0 16% 0; 
+}
+/* ======================== Unser ======================= */
+.unser-background {
+    position: relative;
+    width: 100%;
+    background-image: url('../images/offers_and_packages.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15% 0 15% 0; 
+}
+.unser-content {
+    width: 51%;
+    margin: auto 0 auto auto;
+}
+/* ==================== Footer ===================== */
+.footer-triangle {
+    width: 50px;
+    height: 30px;
+    background: #fff;
+    position: relative;
+    margin: auto;
+    top: -27px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.footer-brand {
+    padding: 50px 0;
+    text-align: center;
+}
+.footer-brand img {
+    width: 117px;
+    height: 84px;
+}
+.footer-container {
+    width: 79%;
+    margin: auto;
+}
+.hotel-text h5 {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+.hotel-text p {
+    font-size: 15px;
+    padding-top: 0;
+}
+.footer-contact p {
+    font-size: 15px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.footer-copy-main {
+    width: 90%;
+    margin: auto;
+    border-top: 1px solid #ebebeb;
+}
+.footer-copy {
+    width: 88%;
+    margin: auto;
+    padding: 20px 0;
+}
+.footer-copy p {
+    font-size: 13px;
+    padding-bottom: 0;
+}
+/* ====================== Gallery Page Css ===================== */
+/* ================== Gallery hero section ============== */
+.image-box  {
+    transition: all ease-in-out 0.3s;
+}
+.image-box img:hover {
+    transform: scale(1.1);
+}
+.galerie-background {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url('../images/gallery-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.gallery-overly {
+    background-color: rgba(0,0,0,0.2);
+    opacity: 0.5;
+}
+.gallery-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.gallery-content h1 {
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 1;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-family: "Playfair";
+}
+.gallery-content h5 {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-style: italic;
+    font-family: "Playfair";
+}
+.gallery-grids-main {
+    margin-top: 70px;
+    text-align: center;
+}
+.gallery-top-text h2 {
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: -1px;    
+    font-family: "Playfair";
+    color: #222222;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+.first-gallery {
+    margin-top: 15px;
+}
+.gird-box {
+    padding: 19px 5px;
+    width: 100%;
+}
+.gird-box img {
+    width: 100%;
+    height: auto;
+}
+.ziegelstein-top-text {
+    text-align: center;
+    padding-bottom: 5px;
+}
+.ziegelstein-inner {
+    margin-top: 70px;
+    padding-top: 10px;
+}
+.ziegelstein-top-text h2 {
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: -1px;    
+    font-family: "Playfair";
+    color: #222222;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+.ziegelstein-top-text p {
+    padding-top: 0.7em;
+}
+.ziegelstein-box {
+    padding: 18px 5px;
+}
+.ziegelstein-box img {
+    height: auto;
+    width: 100%;
+}
+.angepasste-inner {
+    margin-top: 70px;
+    text-align: center;
+    padding-top: 10px;
+}
+.angepasste-top-text {
+    padding-bottom: 20px;
+}
+.angepasste-top-text h2 {
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: -1px;
+    font-family: "Playfair";
+    color: #222222;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+.angepasste-top-text p {
+    padding-top: 0.7em;
+}
+.angepasste-row-1, .angepasste-row-2, .angepasste-row-3, .angepasste-row-4 {
+    display: flex;
+}
+.angepasste-box {
+    padding: 3px;
+}
+.angepasste-box img {
+    width: 100%;
+    height: 120px;
+}
+.angepasste-laste-box {
+    width: 100%;
+    padding: 3px;
+}
+.angepasste-laste-box img {
+    width: 100%;
+    height: auto;
+}
+.rotierende-inner {
+    margin-top: 70px;
+    padding-top: 10px;
+    text-align: center;
+}
+.rotierende-top-text h2 {
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: -1px;
+    font-family: "Playfair";
+    color: #222222;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+.rotierende-top-text p {
+    padding-top: 0;
+}
+.carousel-cell.gallery-carousel-cell {
+    width: 100%;
+    padding-left: 3px;
+}
+.gallery-flickity ol.flickity-page-dots {
+    display: block;
+}
+.gallery-flickity .flickity-page-dots .dot {
+    position: relative;
+    top: -13px;
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    margin: 0;
+    background: #333;
+    border-radius: 0;
+    cursor: pointer;
+}
+.album-inner {
+    margin-top: 70px;
+    text-align: center;
+    padding-top: 55px;
+}
+.album-top-text h2 {
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: -1px;
+    font-family: "Playfair";
+    color: #222222;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+/* Tilter Css */
+.tilter-main {
+    display: flex;
+    justify-content: center;
+}
+.tilter {
+	position: relative;
+	display: block;
+	width: calc(33.33% - 27px);
+	margin: 1.5em 1.3em;
+	color: #fff;
+	perspective: 1000px;
+}
+
+.tilter * {
+	pointer-events: none;
+}
+
+.tilter:hover,
+.tilter:focus {
+	color: #fff;
+	outline: none;
+}
+
+.tilter__figure,
+.tilter__image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.tilter__figure > * {
+	transform: translateZ(0px); /* Force correct stacking order */
+}
+
+.tilter__figure {
+	position: relative;
+}
+
+.tilter__figure::before {
+	content: '';
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+}
+
+.tilter__deco {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.tilter__deco--overlay {
+	background: rgba(0,0,0,0.2);
+}
+
+.tilter__deco--shine div {
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
+}
+
+.tilter__deco--lines {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 2px;
+}
+
+.tilter__caption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+    padding: 4em 3em 1.5em 3em;
+}
+
+.tilter__title {
+    font-family: "Playfair";
+    font-size: 33px;
+    text-align: left;
+    font-style: italic;
+	font-weight: 400;
+	line-height: 1;
+    margin: 0;
+}
+
+.tilter__description {
+    font-size: 13px;
+    line-height: 1.9;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/* Flickity Slider */
+  
+.carousel {
+    background: #FAFAFA;
+  }
+  .carousel-cell:nth-child(1) {
+    padding-left: 0;
+  }
+  .carousel-cell:nth-child(5) {
+    padding-right: 10px;
+  }
+  .carousel-cell:nth-child(6) {
+    padding-left: 0;
+  }
+  
+  .carousel-cell {
+    width: 50%;
+    height: 600px;
+    margin-right: 10px;
+    padding-left: 10px;
+    margin: 0;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  .carousel-cell img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+  }
+  
+  .carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+  }
+  .flickity-prev-next-button.previous {
+    margin-left: 40px;
+  }
+  
+  .flickity-prev-next-button.next {
+    margin-right: 40px;
+  }
+  
+  .flickity-prev-next-button .flickity-button-icon {
+    width: 44%;
+    height: 60%;
+  }
+  svg.flickity-button-icon {
+    margin-left: 2px;
+  }
+  
+  ol.flickity-page-dots {
+    display: none;
+  }
+  button.flickity-button.flickity-fullscreen-button.flickity-fullscreen-button-view {
+    display: none;
+  }
+  /* Flickity Slider 2 */
+  .flickity-2 .flickity-viewport {
+    height: 500px !important;
+  }
+  .flickity-top-text {
+    font-family: Oswald, Helvetica, Arial, sans-serif;
+    padding: 80px 0;
+    text-align: center;
+  }
+  .flickity-top-text h2 {
+    font-size: 45px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+  .flickity-top-text h5 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-weight: 400;
+    padding-top: 7px;
+  }
+  .flickity-2 .flickity-prev-next-button.previous {
+    left: 10px;
+    display: none;
+  }
+  .flickity-2 .flickity-prev-next-button.next {
+    right: 10px;
+    display: none;
+  }
+  .flickity-cell {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .column-1 {
+    width: 30%;
+  }
+  .column-2 {
+    width: 70%;
+  }
+  .flickity-cell-inner {
+    width: 100%;
+    height: 500px;
+  }
+  .flickity-inner-box {
+    width: 100%;
+    height: 100%;
+    background-color: #0f172b;
+    padding: 60px 70px 70px 70px;
+    color: #ffff;
+    font-family: Oswald, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .flickity-inner-box h2 {
+    font-size: 45px;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding-bottom: 25px;
+  }
+  .flickity-inner-box p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.8;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 0;
+  }
+  .flickity-inner-box p:last-child {
+    font-size: 16px;
+  }
+  .flickity-inner-image{
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/Placeholder.jpg');
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  /* ******************** Room Detail Page Css ******************* */
+  /* ===================== Header Section ======================= */
+  .custom-container.rmp-container {
+    padding: 0 15px;
+   }
+  .custom-container {
+    max-width: 1420px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0 90px;
+  }
+  .rd-main {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url('../images/single-room-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .overly.single-overly {
+    background-color: rgba(0,0,0,0.3);
+    opacity: 1;
+  }
+  .einzimmer-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  } 
+  .enizmer-text {
+    width: 100%;
+    padding-top: 26.3%;
+  }
+  .enizmer-text h1 {
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: -1px;
+      line-height: 1.2;
+      font-size: 64px;
+      font-style: italic;
+      font-family: 'Playfair';
+  }
+  .enizmer-text span {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-family: "Playfair Display", sans-serif;
+  }
+  .einzimmer-list {
+    width: 55%;
+    padding-top: 14%;
+    margin: auto;
+  }
+  .einzimmer-list ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+  }
+  .einzimmer-list ul li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  .einzimmer-list ul li a {
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  /* ====================== Room Pricing Section ======================= */
+  .cstm-cont-main {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 20px 30px 0 rgba(1, 1, 1, 0.1);
+    margin-top: -100px;
+    position: relative;
+    padding: 50px 50px 80px 50px;
+  }
+  .rm-pricing-left {
+    padding-right: 45px;
+    border-right: 1px solid #999999;
+    padding-bottom: 60px;
+  }
+  .rm-pricing-left p {
+    color: #222222;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .rm-pricing-left p strong {
+    font-size: 26px;
+    line-height: 1.3;
+    letter-spacing: 0px;
+    font-family: 'Merriweather', serif;
+    color: #222222;
+  }
+  .rm-pricing-right {
+    padding-left: 25px;
+  }
+  .single-rm-price {
+    padding-top: 25px;
+  }
+  .srp-text span {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    float: left;
+    color: #222222;
+    font-family: 'Merriweather', serif;
+  }
+  .srp-text h2 {
+    font-size: 62px;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+    color: #222222;
+    padding-top: 10px;
+  }
+  .srp-button {
+    display: flex;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .srp-button a {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 1em 5.2em 1em 5.2em;
+    background-color: #8d6c4a;
+    border-color: #8d6c4a;
+    margin-top: 10px;
+    transition: color .2s linear, background .3s linear, opacity .2s linear;
+  }
+  .srp-button a:hover {
+    background-color: #5f442f;
+  }
+  .single-rm-icons {
+    padding-top: 50px;
+  }
+  .room-icon {
+    display: flex;
+    padding: 13px 0;
+  }
+  .sri-icon {
+    width: 70px;
+  }
+  .sri-icon img {
+    width: 45px;
+  }
+  .sri-text p {
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    color: #222222;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  /* ======================== Amenities ======================== */
+  .amenities {
+    width: 100%;
+    background-color: #222222;
+    padding: 80px 0;
+  }
+  .room-amenti-content {
+    display: flex;
+  }
+  .amenti-box img {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+  .amenti-text p {
+    float: left;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .amenti-list ul {
+    padding-left: 0;
+  }
+  .amenti-list ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    margin-top: 0;
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .amenti-list ul li::before {
+    content: '\f054';
+    font-family: 'Font Awesome 5 Pro';
+    float: left;
+    line-height: 2.8em;
+    font-size: 10px;
+    position: relative;
+    font-weight: 900;
+    left: -20px;
+    top: -2px;
+  }
+  /* ===================== Flickity Slider ====================== */
+  .flickity-slider {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .room-carousel-cell {
+    width: 58%;
+  }
+  /* ========================= weitere ========================= */
+  .weitere {
+    padding: 60px 0 30px 0;
+  }
+  .weitere-text {
+    text-align: center;
+    color: #222222;
+    font-family: Oswald, Helvetica, Arial, sans-serif;
+  }
+  .weitere-text h2 {
+    font-size: 43px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-style: italic;
+    font-family: 'Playfair';
+  }
+  .weitere-text h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-weight: 400;
+    padding-top: 7px;
+    font-family: 'Playfair';
+    color: #222222;
+  }
+  .weitere-block {
+    padding-top: 60px;
+  }
+  .weitere-box-1 {
+    position: relative;
+    width: 100%;
+    height: 285px;
+    background-image: url('../images/room-3.jpg');
+    background-size: cover;
+  }
+  .weitere-box-2 {
+    position: relative;
+    width: 100%;
+    height: 285px;
+    background-image: url('../images/room-2.jpg');
+    background-size: cover;
+  }
+  .weitere-box-3 {
+    position: relative;
+    width: 100%;
+    height: 285px;
+    background-image: url('../images/room-1.jpg');
+    background-size: cover;
+  }
+  .weitere-box-hover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+  }
+  .weitere-box-hover:hover {
+    opacity: 0.70;
+    top: 0px;
+    transition: all ease-in-out 0.3s;
+  }
+  .weitere-box-hover:before {
+    content: '';
+    width: 60px;
+    height: 2px;
+    right: -100%;
+    position: relative;
+    background-color: #fff;
+    transition: all ease-in-out 0.9s;
+    opacity: 0.7;
+  }
+  .weitere-box-hover:hover::before {
+    right: 0;
+  }
+  .weitere-box-hover:after {
+    content: '';
+    position: relative;
+    height: 60px;
+    right: 30px;
+    width: 2px;
+    top: -100%;
+    background-color: #fff;
+    transition: all ease-in-out 0.9s;
+    opacity: 0.7;
+  }
+  .weitere-box-hover:hover::after {
+    top: 0;
+  }
+  .weitere-text {
+    padding-top: 20px;
+  }
+  .weitere-text h3 {
+    text-align: center;
+    width: 100%;
+    padding: 0 0 20px 0;
+    box-sizing: border-box;
+    color: #222222;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Playfair';
+    border-bottom: 1px solid #999999;
+  }
+  .weitere-text p {
+    text-align: left;
+    padding-top: 0;
+  }
+  .weitere-value {
+    display: flex;
+  }
+  .value {
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #222222;
+    font-family: 'Merriweather', serif;
+    border-right: 1px solid #999999;
+    padding: 10px 0 12px 0;
+  }
+  .value:last-child {
+    border-right: none;
+  }
+  .value h5 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0;
+    font-family: 'Merriweather', serif;
+  }
+  .value span {
+      font-size: 14px;
+  }
+  .value a {
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #222;
+    line-height: 1;
+    color: #222222;
+  }
+/* ====================== Contact page Css ================== */
+/* ====================== contact main ===================== */
+.contact-nav .menu-icon a {
+    color: #222222;
+}
+.contact-nav.navbar .dropdown a {
+    color: #222222; 
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.contact-nav.navbar .dropdown ul li a {
+    color: #fff;
+}
+.contact-nav.navbar .contact-number p {
+    color: #222222; 
+}
+.contact-nav.navbar .contact-number p::before {
+    color: #222222;
+}
+.contact-main {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+  }
+  .contact-main-text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact-main-text h1 {
+    font-size: 65px;
+    line-height: 1.1em;
+    color: #222222;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+  }
+  .contact-main-button {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 80px;
+  }
+  .button-box {
+   text-align: center;
+   transition: all ease-in-out 0.3s;
+   padding-top: 25px;
+  }
+  .button-box:hover {
+    transform: scale(1.1);
+  }
+  .contact-main-button a {
+    color: #ffffff;
+    background-color: #9E7256;
+    font-size: 12px;
+    padding: 15px 30px;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    transition: all ease-in-out 0.6s;
+    text-transform: uppercase;
+  }
+  .fa-map-marker-alt {
+    margin-right: 5px;
+    font-size: 13px;
+  }
+  .form-side {
+    padding: 40px 0;
+  }
+  .form-side h2 {
+    font-size: 37px;
+    color: #222222;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-family: 'Playfair';
+    font-style: italic;
+  }
+  .form-group {
+    padding-top: 25px;
+  }
+  .form-items label {
+    font-size: 14px;
+    padding: 15px 30px;
+    line-height: 1;
+    letter-spacing: 0px;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    color: #222222;
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  .form-items input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #999999;
+  }
+  .form-items textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #999999;
+  }
+  .checkbox-item {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .form-items.checkbox-item input {
+    width: 2%;
+    margin-right: 10px;
+  }
+  .form-items.checkbox-item p {
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0px;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    color: #222222;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .form-button input {
+    border: 2px solid #8d6c4a;
+    background-color: #8d6c4a;
+    color: #ffffff;
+    font-family: Oswald, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    padding: .6em 2.5em .6em 2.5em;
+    transition: all ease-in-out 0.2s;
+  }
+  .form-button input:hover {
+    background-color: #5f442f;
+    border: 2px solid #5f442f;
+  }
+  .form-button input:focus {
+    outline: none;
+  }
+  .contact-details.contact-page {
+    padding-top: 55px;
+  }
+  .inner-cp-details {
+    padding: 40px 30px 40px 30px;
+    background-color: #f9f9f9;
+    border-style: double;
+    border-width: 4px 4px 4px 4px;
+    border-color: #999999;
+  }
+  .contact-cp-box  {
+    text-align: center;
+  }
+  .contact-cp-box strong {
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Merriweather', serif;
+    color: #222222;
+    line-height: 2;
+  }
+  .contact-cp-box p {
+    font-size: 14px;
+    color: #333333;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 1.9;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .contact-cp-box a {
+      color: #424242;
+  }
+  .contact-cp-box p:nth-last-child(4) {
+    font-size: 16px;
+  }
+  .contact-cp-box p:nth-last-child(3) {
+    padding-top: 30px;
+  }
+  .contact-page-icons {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .contact-page-icons h3 {
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Merriweather', serif;
+    color: #222222;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .social-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: all ease-in-out 0.2s;
+  }
+  .social-icon:hover {
+    transform: scale(0.9);
+    opacity: 0.85;
+  }
+  .social-icon .fab {
+    font-size: 24px;
+    background: transparent;
+    color: #fff;
+  }
+  .social-icon:nth-child(1) {
+    background: #3b5998;
+  }
+  .social-icon:nth-child(2) {
+    background: #589442;
+  }
+  .social-icon:nth-child(3) {
+    background: #cd201f;
+  }
+  .social-icon:last-child {
+    background: #262626;
+    margin-right: 0;
+  }
+  /* ======================= Contact Map ======================= */
+  .embed-responsive-100x400px {
+    padding-bottom: 400px;
+  }
+  /* ====================== Lorem Detail Css ================ */
+  .lorem-detail-inner {
+    padding: 40px 0;
+  }
+  .cont-text {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .cont-text h3 {
+    letter-spacing: 0px;
+    color: #222222;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 0.5px;
+  }
+  .cont-text p {
+    letter-spacing: 0px;
+    color: #222222;
+    line-height: 1.9;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+/* Front End Display Button */
+  .est-frontend-display-wrap {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9999;
+  }
+  .est-frontend-display-wrap .est-tab-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    transform-origin: 0 0;
+    z-index: 9999;
+  }
+  .est-frontend-display-wrap .est-tab-type {
+    transform: rotate(90deg) translate(-50%);
+  }
+  .est-frontend-display-wrap a.est-external-link {
+    display: block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 0 0 8px 8px;
+    background-color: #cc0780;
+    color: #ffffff;
+  }
+  .est-frontend-display-wrap a.est-external-link:hover {
+    background-color: #f69c37;
+  }
+  /* ========================= News Page Css ================= */
+  .news-top-inner {
+    display: flex;
+  }
+  .news-block {
+    position: relative;
+    height: 570px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .news-block:hover {
+    z-index: 1;
+  }
+  .news-block .overly {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+  .news-block .overly:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .news-large-side {
+    width: 50%;
+  }
+  .news-small-side {
+    display: flex;
+    width: 50%;
+  }
+  .news-block-1 {
+    width: 100%;
+    background-image: url('../images/post-8.jpg');
+  }
+  .news-block-2 {
+    width: 50%;
+    background-image: url('../images/post-7.jpg');
+  }
+  .news-block-3 {
+    width: 50%;
+    background-image: url('../images/post-6.jpg');
+  }
+  .news-block-4 {
+    width: 50%;
+    background-image: url('../images/post-5.jpg');
+  }
+  .news-block-5 {
+    width: 50%;
+    background-image: url('../images/post-4.jpg');
+  }
+  .news-block-6 {
+    width: 100%;
+    background-image: url('../images/post-3.jpg');
+  }
+  .news-block-7 {
+    width: 100%;
+    background-image: url('../images/post-2.jpg');
+  }
+  .news-block-8 {
+    width: 50%;
+    background-image: url('../images/post-1.jpg');
+  }
+  .news-details {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .news-top-text {
+    padding: 0 37px;
+    z-index: 1;
+  }
+  .news-top-text ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .news-top-text ul li {
+    list-style: none;
+    text-align: center;
+  }
+  .news-top-text ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    padding: 0 4px;
+    opacity: 0.8;
+    text-align: center;
+  }
+  .news-top-text ul li a span {
+    padding: 0 4px;
+  }
+  .news-top-text h5 {
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: italic;
+    font-family: "Playfair";
+    margin: 10px 0 10px 0;
+    text-align: center;
+  }
+  .news-top-text h5 a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .small-box-text h5 {
+    font-size: 30px;
+  }
+  .date-box {
+    text-align: center;
+  }
+  .date-box a {
+    position: relative;
+    color: #fff;
+    padding: 3px 0 3px 0;
+    font-family: "Playfair";
+    opacity: 0.6;
+  }
+  .date-box a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    left: 0%;
+    height: 1px;
+    width: 1%;
+    background-color: #fff;
+    transform-origin: right top;
+    transition: color 0.1s,transform 0.2s ease-out;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+  }
+  .date-box a:hover::before {
+    width: 100%;
+    opacity: 1;
+  }
+  .degi-top-text .date-box a::before {
+    background-color: #9B9B9B;
+  }
+  /* ================== News Single Page Css ====================== */
+  .news-container {
+    padding: 0;
+  }
+  .news-container .cstm-cont-main {
+    padding: 50px 50px 65px 50px;
+  }
+  .news-hero-background {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url('../images/post-7-promo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .news-hero-text {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .news-hero-text ul li a {
+    font-size: 12px;
+    padding: 0 3px;
+    opacity: 1;
+  }
+  .news-hero-text h1 {
+    font-weight: 400;
+    text-transform: none;
+    font-style: italic;
+    letter-spacing: -2px;
+    line-height: 1.2;
+    font-size: 60px;
+    font-family: "Playfair";
+  }
+  .news-hero-text h1 a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .news-hero-text .date-box a {
+    opacity: 1;
+  }
+  .news-single-text p {
+    margin-bottom: 0;
+  }
+  .news-single-text h3 {
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: -1px;
+    font-family: "Playfair";
+    line-height: 1.5;
+  }
+  .new-buttons {
+    display: flex;
+    padding: 40px 0;
+  }
+  .news-button a {
+    color: #888;
+    display: inline-block;
+    border: 0;
+    background: #f0f0f0;
+    padding: 6px 15px 6px 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+  }
+  .news-button a:before {
+    background: #fff;
+    border-radius: 10px;
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 14px;
+  }
+  .news-button a:after {
+    background: #fff;
+    border-bottom: 17px solid transparent;
+    border-left: 10px solid #f0f0f0;
+    border-top: 17px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .dinge-main {
+    width: 100%;
+  }
+  .dinge-main h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: -1px;
+    font-family: "Playfair";
+  }
+  .dinge-boxes {
+    padding-top: 25px;
+  }
+  .dinge-boxes .dinge-box:nth-child(1) {
+    padding-right: 4px;
+  }
+  .dinge-boxes .dinge-box:nth-child(2) {
+    padding-left: 4px;
+  }
+  .dinge-box1 {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    background-image: url('../images/post-4-suite.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .dinge-box2 {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    background-image: url('../images/post-5-NEW.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .dinge-box .overly {
+    background-color: rgba(243, 240, 240, 0.3);
+    opacity: 0;
+  }
+  .dinge-box .overly:hover {
+    /* background-color: #fff; */
+    opacity: 0.8;
+  }
+  .dinge-box .overly:before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    left: 100%;
+    top: 50%;
+    background-color: #fff;
+    transition: all ease-in-out 0.5s;
+  }
+  .dinge-box .overly:hover::before {
+    content: '';
+    left: 43.5%;
+  }
+  .dinge-box .overly:after {
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 2px;
+    top: -22%;
+    left: 50%;
+    background-color: #fff;
+    transition: all ease-in-out 0.5s;
+  }
+  .dinge-box .overly:hover::after {
+    content: '';
+    top: 40%;
+  }
+  .dinge-box-text {
+    padding: 20px 0;
+  }
+  .degi-top-text ul {
+    margin-bottom: 0;
+  }
+  .degi-top-text ul li a {
+      color: #9B9B9B;
+      font-size: 12px;
+  }
+  .dinge-box-text h5 {
+    font-size: 21px;
+    margin-bottom: 6px;
+  }
+  .dinge-box-text h5 a {
+    color: #222222;
+  }
+  .dinge-box-text a {
+    color: #9B9B9B;
+  }
+  .hinterlassen {
+    padding-top: 90px;
+    text-align: center;
+  }
+  .hinterlassen h3 {
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: -1px;
+    font-family: "Playfair";
+    margin-bottom: 5px;
+  }
+  .hinterlassen p {
+    padding: 0;
+  }
+  .hinterlassen-form-group .form-items {
+    text-align: left;
+  }
+  .hinterlassen-form-group .form-items textarea:focus {
+    outline: 0;
+    border-bottom: 2px solid #000;
+  }
+  .hinterlassen-form-group .form-items label {
+    padding-right: 0;
+  }
+  .form-item-row {
+    display: flex;
+  }
+  .form-item-row .form-item:nth-child(1) {
+    padding-left: 0;
+  }
+  .form-item-row .form-item {
+    padding-left: 25px;
+  }
+  .hinterlassen .checkbox-item {
+    padding-bottom: 18px;
+    padding-top: 35px;
+  }
+  .hinterlassen .checkbox-item input {
+    margin-right: 2px;
+  }
+  .hinterlassen .form-button {
+    display: inline-block;
+  }
+  .news-side-right {
+    padding: 10px;
+  }
+  .news-address-box h2 {
+    font-family: Merriweather, serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #8d6c4a;
+    line-height: 1.5;
+  }
+  .news-address-box p {
+    padding: 0;
+    margin-bottom: 3px;
+  }
+  .news-address-box p strong {
+    font-size: 14.5px;
+  }
+  .news-address-box p:nth-last-child(4) {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  .right-news-boxes {
+    padding-top: 55px;
+  }
+  .right-news-boxes h2 {
+    font-family: Merriweather, serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #8d6c4a;
+    line-height: 1.5;
+  }
+  .right-news-box {
+    display: flex;
+    padding-top: 33px;
+  }
+  .small-image-box img {
+    width: 80px;
+    height: auto;
+    margin: 0 0px 2px 0;
+  }
+  .small-text-box a {
+    color: #333333;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: italic;
+    font-family: "Playfair";
+    font-size: 18px;
+    line-height: 1.2;
+    position: relative;
+  }
+  .small-text-box a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    left: 0%;
+    height: 1px;
+    width: 1%;
+    background-color: #000;
+    transform-origin: right top;
+    transition: color 0.1s,transform 0.2s ease-out;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+  }
+  .small-text-box a:hover::before {
+    width: 100%;
+    opacity: 1;
+  }
+  .date {
+    opacity: 0.5;
+    font-family: "Playfair";
+    font-size: 14px;
+    line-height: 1.5;
+    padding-top: 3px;
+  }
+  .small-text-box {
+    max-width: 280px;
+    padding-left: 17px;
+  }
+
+
+                /* Media Css */
+  @media screen and (max-width: 1309px) {
+    /* ================ Room Detail Page Media Css ============= */
+    .value {
+      padding: 0 3% 0 3%
+    }
+    .value p {
+      font-size: 12.5px;
+    }
+  }
+  
+
+  @media screen and (max-width: 860px) {
+    .pagination {
+      left: calc(50% - 0px);
+  }
+  }
+/* ======================== Media Css =================== */
+@media (max-width: 991px) {
+    .hero-vedio {
+        height: 450px;
+    }
+    .hero-content strong {
+        font-size: 12px;
+    }
+    .hero-content h2 {
+        font-size: 25px;
+    }
+    .header-container {
+        padding: 0px 60px;
+    }
+    .content-1-inner {
+        width: 100%;
+        padding: 70px 30px;
+    }
+    .content-1-toptext h2 {
+        font-size: 27px;
+        line-height: 1.4em;
+    }
+    p {
+        font-size: 13px;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .content-1-bottomtext h4 {
+        font-size: 18px;
+    }
+    .schlafen-content {
+        width: 60%;
+    }
+    .unser-content {
+        width: 70%;  
+    }
+    .hotel-text h5 {
+        font-size: 15px;
+    }
+    .hotel-text p {
+        font-size: 14px;
+    }
+    .footer-contact p {
+        font-size: 14px;
+    }
+    /* ================== Gallery Page Media Css ======================= */
+    .container-custom {
+        width: 90%;
+    }
+    .galerie-background {
+        height: 450px;
+    }
+    .ziegelstein-column-1 {
+        text-align: center;
+    }
+    .ziegelstein-column-2 {
+        text-align: center;
+    }
+    .ziegelstein-column-3 {
+        text-align: center;
+    }
+    .ziegelstein-box {
+        padding: 5px 5px;
+    }
+    .gird-box {
+        padding: 5px;
+    }
+    .gallery-grids-main {
+        margin-top: 50px;
+    }
+    .ziegelstein-inner {
+        margin-top: 50px; 
+    }   
+    .angepasste-inner {
+        margin-top: 50px; 
+    } 
+    .rotierende-inner {
+        margin-top: 50px; 
+        padding-top: 20px;  
+    }
+    .album-inner {
+        margin-top: 50px;   
+        padding-top: 20px;
+    }
+    .tilter {
+        margin: 1.5em 1em;
+    }
+    .tilter__title {
+        font-size: 25px;
+    }
+    .tilter__description {
+        font-size: 11px;
+    }
+    /* Flickity Slider */
+    .flickity-prev-next-button.previous {
+        margin-left: 20px;
+      }
+      .flickity-prev-next-button.next {
+        margin-right: 20px;
+      }
+      .flickity-top-text {
+        padding: 60px 0;
+      }
+      .flickity-top-text h2{
+        font-size: 34px;
+      }
+      .flickity-top-text h5 {
+        font-size: 14px;
+      }
+      .flickity-inner-box h2 {
+        font-size: 34px;
+      }
+      .flickity-inner-box {
+        padding: 30px 60px;
+      }
+      /* ======================= Room Detail Page Css =================== */
+      .custom-container {
+          padding: 0 30px;
+      }
+      .enizmer-text h1 {
+        font-size: 55px;
+      }
+      .enizmer-text span {
+        font-size: 16px;
+      }
+      .einzimmer-list {
+        width: 60%;
+        padding-top: 9%;
+      }
+      .rd-main {
+        height: 600px;
+      }
+      .rm-pricing-left {
+        padding-right: 0;
+        border-right: 0;
+      }
+      .rm-pricing-right {
+        padding-left: 0;
+        display: flex;
+      }
+      .single-rm-price {
+        width: 50%;
+        padding-top: 65px;
+      }
+      .single-rm-icons {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+      .room-amenti-content {
+        display: flex;
+        height: 100%;
+        align-items: center;
+      }
+      .srp-text h2 {
+        font-size: 60px;
+      }
+      .srp-text span {
+        font-size: 12px;
+      }
+      .srp-button a {
+        font-size: 13px;
+        padding: 1em 5.2em 1em 5.2em;
+      }
+      .amenities {
+        padding-top: 35px;
+      }
+      .amenti-list {
+        padding-top: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .amenti-text p {
+        font-size: 18px;
+      }
+      .amenti-list ul li {
+        font-size: 13.5px;
+      }
+      .value a {
+          font-size: 13px;
+      }
+      .amenti-list ul li::before {
+        font-size: 11px;
+        left: -15px;
+        top: -2px;
+      }
+      .weitere-text h3 {
+        font-size: 24px;
+      }
+      .weitere-text h2 {
+        font-size: 42px;
+      }
+      .weitere-text h5 {
+        font-size: 16px;
+      }
+      .weitere-box-1 {
+        height: 250px;
+      }
+      .weitere-box-2 {
+        height: 250px;
+      }
+      .weitere-box-3 {
+        height: 250px;
+      }
+      .value {
+       width: 42%;
+      }
+      .value h5 {
+        font-size: 31px;
+      }
+      .value p {
+        font-size: 13px;
+      }
+      .weitere-btn a {
+        font-size: 13px;
+      }
+        /* ======================= Contact Page Media Css ======================= */
+    .contact-main {
+      padding-top: 130px;
+    }
+    .contact-main-text h1 {
+      font-size: 45px;
+    }
+    .button-box {
+        padding-top: 0;
+    }
+    .cont-text h3 {
+      font-size: 14px;
+    }
+    .cont-text p {
+      font-size: 16px;
+    }
+    .form-side h2 {
+      font-size: 34px;
+    }
+    .form-items label {
+      font-size: 17px;
+      padding-top: 25px;
+      padding-bottom: 0;
+    }
+    .fa-map-marker-alt {
+      font-size: 16px;
+    }
+    .cont-text {
+      text-align: center;
+    }
+    .contact-cp-box strong {
+      font-size: 16px;
+    }
+    .contact-cp-box p {
+      font-size: 15px;
+    }
+    .contact-cp-box span {
+      font-size: 15px;
+    }
+    .contact-cp-box a {
+      font-size: 15px; 
+    }
+    .contact-page-icons h3 {
+      font-size: 16px;
+    }
+    .form-items.checkbox-item p {
+      font-size: 16px; 
+      margin-bottom: 0;
+      padding-top: 3px;
+    }
+    .form-button input {
+      font-size: 13px;
+    }
+    .social-icons {
+        padding-bottom: 30px;
+    }
+    .social-icon {
+      width: 42px;
+      height: 42px;
+    }
+    .social-icon .fab {
+      font-size: 22px;
+    }
+    /* ====================== News Page Media Css ===================== */
+    .news-block {
+      height: 490px;
+    }
+    .news-top-inner {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .news-large-side {
+      width: 100%;
+    }
+    .news-small-side {
+      display: flex;
+      width: 100%;
+    }
+    /* ==================== News Single Page Media Css =================== */
+    .news-hero-background {
+       height: 650px;
+    }
+    .news-hero-text h1 {
+      font-size: 40px;
+    }
+    .news-single-text h3 {
+      font-size: 23px;
+    }
+    .dinge-main h3 {
+      font-size: 26px;
+    }
+    .news-top-text {
+      padding: 0 30px;
+    }
+    .degi-top-text ul li a {
+      font-size: 10px;
+    }
+    .dinge-box-text h5 {
+      font-size: 18px;
+    }
+    .hinterlassen-form-group .form-items label {
+      font-size: 15px;
+    }
+    .hinterlassen .checkbox-item input {
+      margin-right: 4px;
+    }
+    .form-items.checkbox-item p {
+      font-size: 13px;
+      padding-top: 0;
+    }
+    .news-side-right {
+      padding-top: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-vedio {
+        height: 350px;
+    }
+    .hero-content {
+        width: 100%;
+    }
+    .hero-content strong {
+        font-size: 11px;
+    }
+    .hero-content h2 {
+        font-size: 20px;
+    }
+    .navbar ul {
+        display: none;
+    }
+    .navbar-brand {
+        margin: 0;
+    }
+    .menu-icon {
+        display: flex;
+        order: 2;
+    }
+    .contact-number {
+        display: none;
+    }    
+    .navbar-brand img {
+        width: 100px;
+        height: 66px;
+    }
+    .header-container {
+        padding: 0px 25px;
+    }
+    .content-1-inner {
+        padding: 70px 0px;
+    }
+    .content-1-toptext h2 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 12.5px;
+        margin-bottom: 5px;
+    }
+    .content-1-signatureimage img {
+        width: 167px;
+    }  
+    .content-1-bottomtext p {
+        font-size: 11.5px;
+        line-height: 1.5;
+    }
+    .schlafen-content {
+        width: 80%;
+    }
+    .unser-content {
+        width: 90%;
+    }
+    .schlafen-content h2 {
+        font-size: 33px;
+    }
+    .hero-button {
+        font-size: 12px;
+        position: relative;
+        top: 10px;
+    }
+    .footer-brand img {
+        width: 100px;
+        height: 66px;
+    }
+    /* ==================== Gallery Media Css ===================== */
+    .galerie-background {
+        height: 400px;
+    }
+    .gallery-content h1 {
+        font-size: 45px;
+    }
+    .gallery-content h5 {
+        font-size: 14px;
+    }
+    .angepasste-box {
+        padding: 2px;
+    }
+    .angepasste-box img {
+        height: 90px;
+    }
+    .tilter-main {
+        flex-wrap: wrap;
+    } 
+    .tilter {
+        width: calc(57.33% - 85px);
+    }    
+    /* Flickity Slider */
+    .carousel-cell {
+        height: 400px;
+      }
+      .angebot-box {
+        margin-top: 10px;
+      }
+      .column-1 {
+        width: 100%;
+        order: 2;
+      }
+      .flickity-inner-box {
+        padding: 20px 60px;
+      }
+      .flickity-inner-box h2 {
+        text-align: center;
+        padding-bottom: 0px;
+      }
+      .flickity-inner-box p {
+        letter-spacing: 0px;
+      }
+      .flickity-inner-box p:last-child {
+        margin-top: -20px;
+      }
+      .column-2 {
+        width: 100%;
+        order: 1;
+      }
+      .flickity-inner-image {
+        height: 277px;
+      }
+      /* ================== Room Detail Page Media Css =================== */
+      .rd-main {
+        height: 450px;
+      }
+      .enizmer-text h1 {
+        font-size: 50px;
+      }
+      .enizmer-text span {
+        font-size: 14px;
+      }
+      .einzimmer-list ul li a {
+        font-size: 10px;
+      }
+      .rm-pricing-left p strong {
+        font-size: 22px;
+      }
+      .rm-pricing-left p {
+        font-size: 15px;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+      }
+      .cstm-cont-main {
+        margin-top: -60px;
+      }
+      .srp-text h2 {
+        font-size: 50px;
+      }
+      .srp-button a {
+        font-size: 13px;
+        padding: 1em 2.2em 1em 2.2em;
+      }
+      .sri-icon img {
+        width: 40px;
+      }
+      .sri-text p {
+        font-size: 14px;
+      }
+      .room-amenti-content {
+        justify-content: center;
+      }
+      .amenti-list {
+        padding-top: 20px;
+      }
+      .room-amenti-content {
+        padding-top: 60px;
+      }
+      .weitere-box-1 {
+        height: 182px;
+      }
+      .weitere-box-2 {
+        height: 182px;
+      }
+      .weitere-box-3 {
+        height: 182px;
+      }
+      .weitere-text h2 {
+        font-size: 34px;
+      }
+      .weitere-text h5 {
+        font-size: 14px;
+      }
+      .weitere-text h3 {
+        font-size: 20px;
+      }
+      .value {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .weitere-btn {
+        padding-top: 13px;
+      }
+      .weitere-btn a {
+        font-size: 11px;
+      }
+      /* ======================= Contact Page Media Css ======================= */
+   .contact-main {
+      padding-top: 100px;
+     }
+     .contact-main-text {
+        padding-bottom: 35px;
+        text-align: center;
+      }
+     .contact-main-text h1 {
+        font-size: 35px;
+        line-height: 1.3;
+      }
+      .contact-main-button {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 60px;
+        justify-content: center;
+      }
+      .contact-main-button a {
+        font-size: 14px;
+      }
+      .fa-map-marker-alt {
+        font-size: 12px;
+      }
+      .cont-text p {
+        font-size: 13px;
+      }
+      .form-side h2 {
+        font-size: 30px;
+      }
+      /* ================= News Page Media Css =================== */
+      .small-box-text h5 {
+        font-size: 22px;
+      }
+      .news-top-text ul li a {
+        font-size: 11px;
+      }
+      .news-top-text h5 {
+        font-size: 27px;
+      }
+      .form-item-row {
+        flex-wrap: wrap;
+      }
+      .form-item-row .form-item {
+        padding-left: 0;
+        width: 100%;
+      }
+}
+
+@media (max-width: 599px) {
+    .hero-vedio {
+        height: 350px;
+    }
+    .header-container {
+        padding: 0px 30px;
+    }
+    .mobile_menu_wrapper {
+      width: 300px;
+      padding: 30px;
+    }
+    .hotel-text p {
+        font-size: 13px;
+    }
+    .footer-contact p {
+        font-size: 13px;
+    }
+    .footer-contact {
+        float: right;
+    }
+    .footer-copy {
+        text-align: center;
+    }
+    /* ==================== Gallery Media Css ===================== */
+    .galerie-background {
+        height: 400px;
+    }
+    /* Flickity Slider */
+    .carousel-cell {
+        height: 300px;
+      }
+      .angebot-box {
+        height: 180px;
+      } 
+      .grid__item-meta {
+        font-size: 11px;
+      } 
+      .grid__item-title {
+        font-size: 32px;
+      }
+      .grid__item-link {
+        font-size: 13px;
+      }
+      .flickity-2 .flickity-viewport {
+        height: 472px !important;
+      }
+      .flickity-inner-image {
+        height: 220px;
+      }   
+      /* ================== Room Detail media Css ===================== */
+      .rm-pricing-right {
+        flex-wrap: wrap;
+      }
+      .einzimmer-list ul li {
+          list-style: none;
+          margin: 0 5px;
+      }
+      .single-rm-price {
+        width: 100%;
+      }
+      .single-rm-icons {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .weitere-box-1 {
+        height: 230px;
+      }
+      .weitere-box-2 {
+        height: 230px;
+      }
+      .weitere-box-3 {
+        height: 230px;
+      }
+      .weitere-text h3 {
+        font-size: 18px;
+      }
+      .weitere-text h5 {
+        font-size: 15px;
+        margin-bottom: 0;
+      }
+      .amenti-list ul li::before {
+        font-size: 10px;
+        left: -12px;
+      }
+      .value p {
+        font-size: 11px;
+        margin-bottom: 0;
+      }
+      .weitere-btn a {
+        font-size: 9px;
+      }
+      .custom-container.rmp-container {
+        padding: 0;
+      }
+        /* ================== Contact Page Media Css ================== */
+    .contact-main-text {
+      padding-bottom: 0;
+    }
+    .contact-main-text h1 {
+      font-size: 25px;
+    }
+    .contact-main-button {
+      padding-bottom: 48px;
+    }
+    .contact-main-button a {
+      font-size: 11px;
+      padding: 13px 25px;
+    }
+    .contact-main-button {
+      padding-top: 30px;
+    }
+    .social-icon {
+      width: 40px;
+      height: 40px;
+    }
+    .social-icon .fab {
+      font-size: 21px;
+    }
+    /* ================== News Page Media Css ================== */
+    .news-small-side {
+      flex-wrap: wrap;
+    }
+    .news-block-2 {
+      width: 100%;
+    }
+    .news-block-3 {
+      width: 100%;
+    }
+    .news-block-4 {
+      width: 100%;
+    }
+    .news-block-5 {
+      width: 100%;
+    }
+    .news-block-8 {
+      width: 100%;
+    }
+    /* =================== News Single Page Media Css ===================== */
+    .news-hero-text h1 {
+      font-size: 25px;
+    }
+    .news-single-text h3 {
+      font-size: 20px;
+    }
+    .hinterlassen-form-group .form-items label {
+      font-size: 12px;
+    }
+    .form-items.checkbox-item p {
+      font-size: 12px;
+      line-height: 1.9;
+    }
+    .news-top-text {
+      padding: 0 10px;
+    }
+
+  } 
+  @media (max-width: 499px) {
+    .hero-vedio {
+        height: 300px;
+    }
+    .hero-content strong {
+        font-size: 9px;
+    }
+    .hero-content h2 {
+        font-size: 15px;
+    }
+    .navbar-brand img {
+        width: 80px;
+        height: 55px;
+    }
+    .content-1-inner {
+        padding: 44px 0px;
+    }
+    .content-1-topimage img {
+        width: 60px;
+    }
+    .content-1-signatureimage img {
+        width: 150px;
+    }
+    .content-1-toptext h2 {
+        font-size: 20px;
+    }
+    .content-1-bottomtext h4 {
+        font-size: 16px;
+    }
+    .content-1-bottomtext p {
+        font-size: 10.5px;
+    }
+    .schlafen-content {
+        width: 90%;
+    }
+    .unser-content {
+        width: 100%;
+    }
+    .schlafen-content h2 {
+        font-size: 28px;
+    }
+    .hero-button {
+        font-size: 10px;
+        padding: 12px 10px;
+    }
+    p {
+        font-size: 11px;
+    }
+    .footer-triangle {
+        width: 30px;
+        height: 10px;
+        top: -9px;
+    }
+    .footer-brand {
+        padding: 30px 0;
+    }
+    .footer-brand img {
+        width: 80px;
+        height: 55px;
+    }
+    .hotel-text h5 {
+        font-size: 13px;
+    }
+    .hotel-text p {
+        font-size: 12px;
+    }
+    .footer-contact p {
+        font-size: 12px;
+    }
+    .footer-copy p {
+        font-size: 12px;
+    }
+    /* ==================== Gallery Media Css ===================== */
+    .container-custom {
+        width: 87%;
+    }
+    .galerie-background {
+        height: 300px;
+    }
+    .gallery-content h1 {
+        font-size: 36px;
+    }
+    .gallery-content h5 {
+        font-size: 12px;
+    }
+    .gallery-top-text h2 {
+        font-size: 22px;
+    }
+    .ziegelstein-top-text h2 {
+        font-size: 22px;  
+    }
+    .angepasste-top-text h2 {
+        font-size: 22px;    
+    }
+    .rotierende-top-text h2 {
+        font-size: 22px;     
+    }
+    .album-top-text h2 {
+        font-size: 22px;     
+    }
+    .angepasste-box {
+        padding: 1px;
+    }
+    .angepasste-box img {
+        height: 55px;
+    }
+    .gallery-grids-main {
+        margin-top: 30px;
+    }
+    .ziegelstein-inner {
+        margin-top: 30px;
+        padding-top: 0;
+    }
+    .angepasste-inner {
+        margin-top: 30px;
+        padding-top: 0;    
+    }
+    .rotierende-inner {
+        margin-top: 30px;
+        padding-top: 0;  
+    }
+    .album-inner {
+        margin-top: 30px;
+        padding-top: 0;  
+    }
+    .tilter {
+        width: calc(100% - 86px);
+    }
+    .tilter__caption {
+        padding: 4em 3em 2.5em 3em;
+    }
+    /* Flickity Slider */
+    .carousel-cell {
+        height: 200px;
+      }
+      .flickity-prev-next-button.previous {
+        margin-left: 0px;
+      }
+      .flickity-prev-next-button.next {
+        margin-right: 0;
+      }
+      .angebot-top-text {
+        padding: 30px 0;
+      }
+      .angebot-top-text h2 {
+        font-size: 29px; 
+      }
+      .angebot-top-text h5 {
+        font-size: 13px;
+      }
+      .angebot-content h2 {
+        font-size: 21px;
+      }
+      .angebot-content span {
+        font-size: 12px;
+      }
+      .flickity-2 .flickity-viewport {
+        height: 415px !important;
+      }
+      .flickity-top-text {
+        padding: 30px 0;
+      }
+      .flickity-top-text h2 {
+        font-size: 29px;
+      }
+      .flickity-top-text h5 {
+        font-size: 13px;
+      }
+      .flickity-inner-box {
+        padding: 30px 40px;
+      }
+      .flickity-inner-box h2 {
+        font-size: 26px;
+      }
+      .flickity-inner-image {
+        height: 150px;
+      }
+      /* ===================== Room Detail Page Media Css ===================== */
+      .custom-container {
+          padding: 0 10px;
+      }
+      .rd-main {
+        height: 300px;
+      }
+      .enizmer-text {
+        padding-top: 38%;
+      }
+      .enizmer-text h1 {
+        font-size: 40px;
+      }
+      .enizmer-text span {
+        font-size: 12px;
+      }
+      .einzimmer-list ul li a {
+        font-size: 10px;
+        letter-spacing: 0;
+      }
+      .einzimmer-list {
+        width: 100%;
+      }
+      .cstm-cont-main {
+        margin-top: 0;
+        padding: 20px 10px;
+      }
+      .rm-pricing-left p strong {
+        font-size: 15px;
+        line-height: 1;
+      }
+      .rm-pricing-left p {
+        font-size: 12px;
+      }
+      .weitere-text h5 {
+        line-height: 1.6;
+      }
+      .srp-text span {
+        font-size: 9px;
+      }
+      .single-rm-price {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+      }
+      .srp-text h2 {
+        font-size: 35px;
+      }
+      .srp-button {
+        padding-top: 0;
+      }
+      .srp-button a {
+        font-size: 11px;
+        padding: 1em 1.2em 1em 1.2em;
+      }
+        /* ================= Contact Page Media Css =================== */
+    .contact-main {
+      padding-top: 90px;
+    }
+    .contact-main-text h1 {
+      font-size: 20px;
+    }
+    .contact-main-button {
+      padding-top: 36px;
+    }
+    .cont-text h3 {
+      font-size: 13px;
+    }
+    .cont-text p {
+      font-size: 12px;
+    }
+    .form-side {
+      padding: 10px 0;
+    }
+    .form-side h2 {
+      font-size: 25px;
+    }
+    .form-items label {
+      font-size: 14px;
+      padding-top: 20px;
+    }
+    .form-items.checkbox-item p {
+      font-size: 13px;
+      line-height: 1.2;
+    }
+    .form-button input {
+      font-size: 10px;
+      padding: .6em 1.5em .6em 1.5em;
+    }
+    .contact-details.contact-page {
+      padding-top: 25px;
+    }
+    .contact-cp-box strong {
+      font-size: 13px;
+    }
+    .contact-cp-box p:nth-last-child(4) {
+      font-size: 15px;
+    }
+    .contact-cp-box p {
+      font-size: 13px;
+    }
+    .contact-cp-box span {
+      font-size: 14px;
+    }
+    .contact-cp-box a {
+      font-size: 14px;
+    }
+    .contact-page-icons h3 {
+      font-size: 14px;
+    }
+    .social-icon .fab {
+      font-size: 18px;
+    }
+    .social-icon {
+      width: 38px;
+      height: 38px;
+    }
+    /* ================ News Page Media Css ============== */
+    .news-container .cstm-cont-main {
+      padding: 50px 20px 65px 20px;
+    }  
+    .news-top-text h5 {
+      font-size: 23px;
+    }
+    .news-top-text ul li a {
+      font-size: 10px;
+    }
+    .news-hero-background {
+      height: 400px;
+    }
+    .news-single-text h3 {
+      font-size: 18px;
+    }
+    .dinge-main h3 {
+      font-size: 22px;
+    }
+    .hinterlassen h3 {
+      font-size: 22px;
+    }
+    .small-text-box a {
+      font-size: 14px;
+    }
+    .news-top-text {
+      padding: 0 10px;
+    }
+  
+    
+  }  
+
+
